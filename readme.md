@@ -1,6 +1,11 @@
 # Sieve of Erastothenes
 
-## RSA 2048
+## Diffie-Helman, RSA and Prime factorisation
+
+* no efficient mechanism to test a prime on a classical computer
+* sub-exponential time is required
+
+### RSA 2048
 
 ```
 2519590847565789349402718324004839857142928212620403202777713783604366202070
@@ -13,3 +18,16 @@
 6373289912154831438167899885040445364023527381951378636564391212010397122822
 120720357
 ```
+
+## Shors Algorithm
+
+* Peter Shor discovered a quantum algorithm in 1994 for finding the factors of an integer.
+* Runs in polynominal time (log N)
+* Currently constrained by quantum hardware
+
+## Eliptic Curve
+
+* takes advantage of uncountable infinity
+* ECDSA (Eliptic Curve Digital Signature algorithm)
+
+![image](./docs/images/elliptic-curve-cryptography-diagram.png)
