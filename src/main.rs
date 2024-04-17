@@ -18,6 +18,7 @@ fn main() {
         let mut c: usize = 0;
         for i in 2..n + 1 {
             if resutls[i] {
+                // println!("{} is prime", i);
                 c += 1;
             }
         }
