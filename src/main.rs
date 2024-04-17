@@ -12,12 +12,12 @@ fn main() {
         println!("finding primes numbers up to {}", n);
 
         let now = Instant::now();
-        let arr = build_sieve(n);
+        let resutls = sieve(n);
         let elapsed = now.elapsed();
 
         let mut c: usize = 0;
         for i in 2..n + 1 {
-            if arr[i] {
+            if resutls[i] {
                 c += 1;
             }
         }
@@ -28,7 +28,7 @@ fn main() {
     println!("bye bye!");
 }
 
-fn build_sieve(n: usize) -> Vec<bool> {
+fn sieve(n: usize) -> Vec<bool> {
     let mut arr = vec![true; n + 1];
     arr[0] = false;
     arr[1] = false;
